@@ -1,0 +1,6 @@
+framework module Z3Profile {
+  umbrella header "Z3Profile-umbrella.h"
+
+  export *
+  module * { export * }
+}

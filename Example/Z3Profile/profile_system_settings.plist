@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>title</key>
+			<string>出圈提示</string>
+			<key>subTitle</key>
+			<string></string>
+			<key>accessoryType</key>
+			<integer>5</integer>
+			<key>switchOn</key>
+			<string>开启</string>
+			<key>switchOff</key>
+			<string>关闭</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>title</key>
+			<string>清除缓存</string>
+			<key>subTitle</key>
+			<string></string>
+			<key>accessoryType</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>title</key>
+			<string>版本号</string>
+			<key>subTitle</key>
+			<string>0.8.37</string>
+			<key>accessoryType</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+</array>
+</plist>

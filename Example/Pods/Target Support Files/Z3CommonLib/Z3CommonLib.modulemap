@@ -1,0 +1,6 @@
+framework module Z3CommonLib {
+  umbrella header "Z3CommonLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

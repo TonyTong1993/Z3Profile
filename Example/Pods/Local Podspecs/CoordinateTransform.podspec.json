@@ -1,0 +1,23 @@
+{
+  "name": "CoordinateTransform",
+  "version": "0.1.1",
+  "summary": "A short description of CoordinateTransform.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://gitee.com/tongwanhua/CoordinateTransform",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tony Tony": "tongwanhua1993@163.com"
+  },
+  "source": {
+    "git": "https://gitee.com/tongwanhua/CoordinateTransform.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CoordinateTransform/Classes/**/*",
+  "libraries": "c++"
+}

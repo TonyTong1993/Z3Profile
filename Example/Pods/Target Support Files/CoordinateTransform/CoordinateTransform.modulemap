@@ -1,0 +1,6 @@
+framework module CoordinateTransform {
+  umbrella header "CoordinateTransform-umbrella.h"
+
+  export *
+  module * { export * }
+}

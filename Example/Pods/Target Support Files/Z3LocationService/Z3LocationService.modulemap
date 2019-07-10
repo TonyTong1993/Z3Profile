@@ -1,0 +1,6 @@
+framework module Z3LocationService {
+  umbrella header "Z3LocationService-umbrella.h"
+
+  export *
+  module * { export * }
+}

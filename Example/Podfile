@@ -1,13 +1,11 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '11.0'
 
 target 'Z3Profile_Example' do
   pod 'Z3Profile', :path => '../'
-
-  target 'Z3Profile_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
+  pod 'Z3CommonLib', :path => '../../Z3CommonLib'
+  pod 'Z3DBService', :path => '../../Z3DBService'
+  pod 'Z3LocationService', :path => '../../Z3LocationService'
+  pod 'CoordinateTransform', :path => '../../CoordinateTransform'
 end

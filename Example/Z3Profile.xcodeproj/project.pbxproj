@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55BD16610B1E133BACF10165 /* Pods_Z3Profile_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000188D008675B2B1635716C /* Pods_Z3Profile_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,6 +23,21 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		EBCA5F7722D0421300ABC1D6 /* Z3ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5F6422D0421300ABC1D6 /* Z3ProfileViewController.m */; };
+		EBCA5F7E22D0421300ABC1D6 /* profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBCA5F6F22D0421300ABC1D6 /* profile.plist */; };
+		EBCA5F9C22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5F9922D052CE00ABC1D6 /* Z3ProfileFirstSectionCell.m */; };
+		EBCA5F9D22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA5F9B22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.xib */; };
+		EBCA5FA022D0556200ABC1D6 /* Z3ProfileSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5F9F22D0556200ABC1D6 /* Z3ProfileSettingsViewController.m */; };
+		EBCA5FA322D059B600ABC1D6 /* Z3ProfileGPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FA222D059B600ABC1D6 /* Z3ProfileGPSViewController.m */; };
+		EBCA5FA522D05AC300ABC1D6 /* profile_gps_status.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBCA5FA422D05AC300ABC1D6 /* profile_gps_status.plist */; };
+		EBCA5FAB22D0674C00ABC1D6 /* Z3Common.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FAA22D0674C00ABC1D6 /* Z3Common.m */; };
+		EBCA5FB022D0840D00ABC1D6 /* Z3ProfileAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FAF22D0840D00ABC1D6 /* Z3ProfileAboutViewController.m */; };
+		EBCA5FB622D0843300ABC1D6 /* Z3ProfileAboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA5FB222D0843300ABC1D6 /* Z3ProfileAboutView.xib */; };
+		EBCA5FB722D0843300ABC1D6 /* Z3ProfileAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FB322D0843300ABC1D6 /* Z3ProfileAboutView.m */; };
+		EBCA5FBB22D085D800ABC1D6 /* Z3ProfilePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FBA22D085D800ABC1D6 /* Z3ProfilePhoneViewController.m */; };
+		EBCA5FBF22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FBC22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.m */; };
+		EBCA5FC022D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCA5FBD22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.xib */; };
+		EBCA5FF522D215D900ABC1D6 /* Z3GPSRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA5FF322D215D900ABC1D6 /* Z3GPSRecordsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C05D8B8F255114C16D50483 /* Z3Profile.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Z3Profile.podspec; path = ../Z3Profile.podspec; sourceTree = "<group>"; };
-		18A7711F79CCC2497E56C5E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		000188D008675B2B1635716C /* Pods_Z3Profile_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z3Profile_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C05D8B8F255114C16D50483 /* Z3Profile.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Z3Profile.podspec; path = ../Z3Profile.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		18A7711F79CCC2497E56C5E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Z3Profile_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z3Profile_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,9 +73,36 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6B813D192E31DD04583D5B27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6B813D192E31DD04583D5B27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3EBF71C78D919EA79D210BB /* Pods-Z3Profile_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Profile_Example.debug.xcconfig"; path = "Target Support Files/Pods-Z3Profile_Example/Pods-Z3Profile_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C43221217CC5E9E59FE81603 /* Pods-Z3Profile_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Profile_Example.release.xcconfig"; path = "Target Support Files/Pods-Z3Profile_Example/Pods-Z3Profile_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EBCA5F6422D0421300ABC1D6 /* Z3ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3ProfileViewController.m; sourceTree = "<group>"; };
+		EBCA5F6822D0421300ABC1D6 /* Z3ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3ProfileViewController.h; sourceTree = "<group>"; };
+		EBCA5F6F22D0421300ABC1D6 /* profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = profile.plist; sourceTree = "<group>"; };
+		EBCA5F9922D052CE00ABC1D6 /* Z3ProfileFirstSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3ProfileFirstSectionCell.m; sourceTree = "<group>"; };
+		EBCA5F9A22D052CE00ABC1D6 /* Z3ProfileFirstSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3ProfileFirstSectionCell.h; sourceTree = "<group>"; };
+		EBCA5F9B22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Z3ProfileFirstSectionCell.xib; sourceTree = "<group>"; };
+		EBCA5F9E22D0556200ABC1D6 /* Z3ProfileSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3ProfileSettingsViewController.h; sourceTree = "<group>"; };
+		EBCA5F9F22D0556200ABC1D6 /* Z3ProfileSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3ProfileSettingsViewController.m; sourceTree = "<group>"; };
+		EBCA5FA122D059B500ABC1D6 /* Z3ProfileGPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3ProfileGPSViewController.h; sourceTree = "<group>"; };
+		EBCA5FA222D059B600ABC1D6 /* Z3ProfileGPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3ProfileGPSViewController.m; sourceTree = "<group>"; };
+		EBCA5FA422D05AC300ABC1D6 /* profile_gps_status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = profile_gps_status.plist; sourceTree = "<group>"; };
+		EBCA5FA922D0674B00ABC1D6 /* Z3Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Z3Common.h; path = ../../../Z3CommonLib/Example/Z3CommonLib/Z3Common.h; sourceTree = "<group>"; };
+		EBCA5FAA22D0674C00ABC1D6 /* Z3Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Z3Common.m; path = ../../../Z3CommonLib/Example/Z3CommonLib/Z3Common.m; sourceTree = "<group>"; };
+		EBCA5FAE22D0840D00ABC1D6 /* Z3ProfileAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3ProfileAboutViewController.h; sourceTree = "<group>"; };
+		EBCA5FAF22D0840D00ABC1D6 /* Z3ProfileAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3ProfileAboutViewController.m; sourceTree = "<group>"; };
+		EBCA5FB122D0843200ABC1D6 /* Z3ProfileAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3ProfileAboutView.h; sourceTree = "<group>"; };
+		EBCA5FB222D0843300ABC1D6 /* Z3ProfileAboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Z3ProfileAboutView.xib; sourceTree = "<group>"; };
+		EBCA5FB322D0843300ABC1D6 /* Z3ProfileAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3ProfileAboutView.m; sourceTree = "<group>"; };
+		EBCA5FB922D085D800ABC1D6 /* Z3ProfilePhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3ProfilePhoneViewController.h; sourceTree = "<group>"; };
+		EBCA5FBA22D085D800ABC1D6 /* Z3ProfilePhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3ProfilePhoneViewController.m; sourceTree = "<group>"; };
+		EBCA5FBC22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3ProfilePhoneInfoView.m; sourceTree = "<group>"; };
+		EBCA5FBD22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Z3ProfilePhoneInfoView.xib; sourceTree = "<group>"; };
+		EBCA5FBE22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3ProfilePhoneInfoView.h; sourceTree = "<group>"; };
+		EBCA5FF322D215D900ABC1D6 /* Z3GPSRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z3GPSRecordsViewController.m; sourceTree = "<group>"; };
+		EBCA5FF422D215D900ABC1D6 /* Z3GPSRecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z3GPSRecordsViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +113,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				55BD16610B1E133BACF10165 /* Pods_Z3Profile_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +138,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
+				6868A58684BF9BEE59ACECD8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +158,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
+				000188D008675B2B1635716C /* Pods_Z3Profile_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +166,31 @@
 		6003F593195388D20070C39A /* Example for Z3Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EBCA5FF422D215D900ABC1D6 /* Z3GPSRecordsViewController.h */,
+				EBCA5FF322D215D900ABC1D6 /* Z3GPSRecordsViewController.m */,
+				EBCA5FA922D0674B00ABC1D6 /* Z3Common.h */,
+				EBCA5FAA22D0674C00ABC1D6 /* Z3Common.m */,
+				EBCA5F6822D0421300ABC1D6 /* Z3ProfileViewController.h */,
+				EBCA5F6422D0421300ABC1D6 /* Z3ProfileViewController.m */,
+				EBCA5F9E22D0556200ABC1D6 /* Z3ProfileSettingsViewController.h */,
+				EBCA5F9F22D0556200ABC1D6 /* Z3ProfileSettingsViewController.m */,
+				EBCA5FA122D059B500ABC1D6 /* Z3ProfileGPSViewController.h */,
+				EBCA5FA222D059B600ABC1D6 /* Z3ProfileGPSViewController.m */,
+				EBCA5FAE22D0840D00ABC1D6 /* Z3ProfileAboutViewController.h */,
+				EBCA5FAF22D0840D00ABC1D6 /* Z3ProfileAboutViewController.m */,
+				EBCA5FB922D085D800ABC1D6 /* Z3ProfilePhoneViewController.h */,
+				EBCA5FBA22D085D800ABC1D6 /* Z3ProfilePhoneViewController.m */,
+				EBCA5FB122D0843200ABC1D6 /* Z3ProfileAboutView.h */,
+				EBCA5FB322D0843300ABC1D6 /* Z3ProfileAboutView.m */,
+				EBCA5FB222D0843300ABC1D6 /* Z3ProfileAboutView.xib */,
+				EBCA5FBE22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.h */,
+				EBCA5FBC22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.m */,
+				EBCA5FBD22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.xib */,
+				EBCA5F9A22D052CE00ABC1D6 /* Z3ProfileFirstSectionCell.h */,
+				EBCA5F9922D052CE00ABC1D6 /* Z3ProfileFirstSectionCell.m */,
+				EBCA5F9B22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.xib */,
+				EBCA5F6F22D0421300ABC1D6 /* profile.plist */,
+				EBCA5FA422D05AC300ABC1D6 /* profile_gps_status.plist */,
 				6003F59C195388D20070C39A /* Z3AppDelegate.h */,
 				6003F59D195388D20070C39A /* Z3AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -172,6 +244,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6868A58684BF9BEE59ACECD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3EBF71C78D919EA79D210BB /* Pods-Z3Profile_Example.debug.xcconfig */,
+				C43221217CC5E9E59FE81603 /* Pods-Z3Profile_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "Z3Profile_Example" */;
 			buildPhases = (
+				9CCC82FF0147CD2633D8D968 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				429E8963DC7DB322A66FCC71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,16 +303,20 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Tony Tony";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ZA734EWL3T;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Z3Profile" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -249,10 +336,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCA5FC022D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.xib in Resources */,
+				EBCA5FA522D05AC300ABC1D6 /* profile_gps_status.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				EBCA5F7E22D0421300ABC1D6 /* profile.plist in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				EBCA5FB622D0843300ABC1D6 /* Z3ProfileAboutView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				EBCA5F9D22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +358,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		429E8963DC7DB322A66FCC71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Z3Profile_Example/Pods-Z3Profile_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CoordinateTransform/CoordinateTransform.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Z3CommonLib/Z3CommonLib.framework",
+				"${BUILT_PRODUCTS_DIR}/Z3DBService/Z3DBService.framework",
+				"${BUILT_PRODUCTS_DIR}/Z3LocationService/Z3LocationService.framework",
+				"${BUILT_PRODUCTS_DIR}/Z3Profile/Z3Profile.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoordinateTransform.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Z3CommonLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Z3DBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Z3LocationService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Z3Profile.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Z3Profile_Example/Pods-Z3Profile_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CCC82FF0147CD2633D8D968 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Z3Profile_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCA5FB722D0843300ABC1D6 /* Z3ProfileAboutView.m in Sources */,
 				6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */,
+				EBCA5F7722D0421300ABC1D6 /* Z3ProfileViewController.m in Sources */,
+				EBCA5FBF22D0860D00ABC1D6 /* Z3ProfilePhoneInfoView.m in Sources */,
+				EBCA5FA022D0556200ABC1D6 /* Z3ProfileSettingsViewController.m in Sources */,
+				EBCA5FBB22D085D800ABC1D6 /* Z3ProfilePhoneViewController.m in Sources */,
+				EBCA5FAB22D0674C00ABC1D6 /* Z3Common.m in Sources */,
+				EBCA5F9C22D052CF00ABC1D6 /* Z3ProfileFirstSectionCell.m in Sources */,
+				EBCA5FB022D0840D00ABC1D6 /* Z3ProfileAboutViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* Z3ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				EBCA5FA322D059B600ABC1D6 /* Z3ProfileGPSViewController.m in Sources */,
+				EBCA5FF522D215D900ABC1D6 /* Z3GPSRecordsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +567,10 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3EBF71C78D919EA79D210BB /* Pods-Z3Profile_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZA734EWL3T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Z3Profile/Z3Profile-Prefix.pch";
 				INFOPLIST_FILE = "Z3Profile/Z3Profile-Info.plist";
@@ -412,8 +583,10 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43221217CC5E9E59FE81603 /* Pods-Z3Profile_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZA734EWL3T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Z3Profile/Z3Profile-Prefix.pch";
 				INFOPLIST_FILE = "Z3Profile/Z3Profile-Info.plist";
@@ -469,7 +642,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "Z3Profile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,

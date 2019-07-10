@@ -1,0 +1,42 @@
+{
+  "name": "Z3CommonLib",
+  "version": "0.1.1",
+  "summary": "Z3CommonLib for zzht",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/TonyTong1993/Z3CommonLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "TonyTong1993": "tongwanhua1993@163.com"
+  },
+  "source": {
+    "git": "https://github.com/TonyTong1993/Z3CommonLib.git",
+    "tag": "0.1.1"
+  },
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Z3CommonLib/Classes/**/*",
+  "dependencies": {
+    "YYKit": [
+      "~> 1.0.9"
+    ],
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ],
+    "DZNEmptyDataSet": [
+      "~> 1.8.1"
+    ],
+    "MJRefresh": [
+      "~> 3.2.0"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ]
+  }
+}

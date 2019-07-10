@@ -1,0 +1,6 @@
+framework module Z3DBService {
+  umbrella header "Z3DBService-umbrella.h"
+
+  export *
+  module * { export * }
+}
