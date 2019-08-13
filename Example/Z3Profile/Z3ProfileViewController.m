@@ -127,8 +127,8 @@ static NSString *profileFirstSectionCellReuseIdentifier = @"Z3ProfileFirstSectio
 }
 
 - (void)exitMainViewController {
-    [[NSUserDefaults standardUserDefaults] setBool:false forKey:KEY_USER_LOGIN_FLAG];
-    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:KEY_AUTO_LOGIN];
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:Z3KEY_USER_LOGIN_FLAG];
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:Z3KEY_AUTO_LOGIN];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     Z3LoginViewController *loginVC = [[Z3LoginViewController alloc] initWithLoginSuccessBlock:^(NSXMLParser *parser) {
         [[AppDelegate sharedInstance] applicationLaunchRootViewController];

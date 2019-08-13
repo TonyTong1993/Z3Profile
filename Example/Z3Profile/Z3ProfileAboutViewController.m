@@ -7,7 +7,7 @@
 //
 
 #import "Z3ProfileAboutViewController.h"
-#import "Z3ProfileAboutView.h"
+#import "ProfileAboutView.h"
 @interface Z3ProfileAboutViewController ()
 
 @end
@@ -20,9 +20,9 @@
     [self.view addSubview:[self aboutView]];
 }
 
-- (Z3ProfileAboutView *)aboutView {
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass([Z3ProfileAboutView class]) bundle:nil];
-    Z3ProfileAboutView *view = [[nib instantiateWithOwner:self options:nil] firstObject];
+- (ProfileAboutView *)aboutView {
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([ProfileAboutView class]) bundle:nil];
+    ProfileAboutView *view = [[nib instantiateWithOwner:self options:nil] firstObject];
     CGFloat bottom = 0.0f;
     if (@available(iOS 11.0, *)) {
         bottom += self.view.safeAreaInsets.bottom - 49;

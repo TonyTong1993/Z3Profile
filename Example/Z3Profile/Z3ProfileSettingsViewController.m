@@ -7,9 +7,9 @@
 //
 
 #import "Z3ProfileSettingsViewController.h"
-#import <Z3SettingItem.h>
+#import "Z3SettingItem.h"
 #import "Z3SettingsManager.h"
-#import <MBProgressHUD+Z3.h>
+#import "MBProgressHUD+Z3.h"
 @interface Z3ProfileSettingsViewController ()
 @end
 
