@@ -47,6 +47,9 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="versionLabel" destination="JGE-HW-vht" id="AQr-Lw-g3y"/>
+            </connections>
             <point key="canvasLocation" x="33" y="61"/>
         </view>
     </objects>

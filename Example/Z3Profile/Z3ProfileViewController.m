@@ -14,6 +14,7 @@
 #import "Z3Theme.h"
 #import "Z3LogoutRequest.h"
 #import "Z3LoginViewController.h"
+//#import "AppDelegate+APSN.h"
 @interface Z3ProfileViewController ()
 @property (nonatomic,strong) Z3LogoutRequest *request;
 @end
@@ -115,15 +116,25 @@ static NSString *profileFirstSectionCellReuseIdentifier = @"Z3ProfileFirstSectio
 
 #pragma mark---action
 - (void)logout {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    self.request = [[Z3LogoutRequest alloc] initWithRelativeToURL:@"rest/patrolService/updatePatrolManState" method:GET parameter:@{@"isLogin":@(false)} success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-         [self exitMainViewController];
-    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-        [self exitMainViewController];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提醒" message:@"是否要退出登录？" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        __weak typeof(self) weakSelf = self;
+        self.request = [[Z3LogoutRequest alloc] initWithRelativeToURL:@"rest/patrolService/updatePatrolManState" method:GET parameter:@{@"isLogin":@(false)} success:^(__kindof Z3BaseResponse * _Nonnull response) {
+            [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+            [weakSelf exitMainViewController];
+        } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+            [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+            [weakSelf exitMainViewController];
+        }];
+        [self.request start];
     }];
-    [self.request start];
+    [alert addAction:cancel];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+   
+    
 }
 
 - (void)exitMainViewController {
@@ -144,12 +155,15 @@ static NSString *profileFirstSectionCellReuseIdentifier = @"Z3ProfileFirstSectio
     transition.subtype = kCATransitionFromRight;
     [window.layer addAnimation:transition forKey:@"transition"];
     window.rootViewController = rootViewController;
+     //TODO:苏州水利简易版
+    //[[AppDelegate sharedInstance] unbindTags];
+    
+   
 }
 
 #pragma mark --getter and setter
 - (UIView *)footer {
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = [UIScreen mainScreen].bounds.size.height;
     UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 60)];
     UIView *bottom = [[UIView alloc] initWithFrame:CGRectMake(0, 20, width, 40)];
     bottom.backgroundColor = [UIColor whiteColor];
