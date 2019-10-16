@@ -43,8 +43,8 @@
     CGPoint point = [coorTrans CoorTrans:latitude lon:longitude height:0];
     double lastX = point.x;
     double lastY = point.y;
-    NSString *lastUpdateDateStr = [[NSUserDefaults standardUserDefaults] stringForKey:Z3CommonLastUploadLocationsDateKey];
-    NSInteger count = [[NSUserDefaults standardUserDefaults] integerForKey:Z3CommonLastUploadLocationsCountKey];
+    NSString *lastUpdateDateStr = @"";//[[NSUserDefaults standardUserDefaults] stringForKey:Z3CommonLastUploadLocationsDateKey];
+    NSInteger count = 5;//[[NSUserDefaults standardUserDefaults] integerForKey:Z3CommonLastUploadLocationsCountKey];
     Z3SettingItem *item = self.dataSource[0][0];
     item.subTitle = [NSString stringWithFormat:@"%lf",longitude];
     item = self.dataSource[0][1];

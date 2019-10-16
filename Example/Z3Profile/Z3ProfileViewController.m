@@ -14,6 +14,7 @@
 #import "Z3Theme.h"
 #import "Z3LogoutRequest.h"
 #import "Z3LoginViewController.h"
+#import "Z3LocationManager.h"
 //#import "AppDelegate+APSN.h"
 @interface Z3ProfileViewController ()
 @property (nonatomic,strong) Z3LogoutRequest *request;
@@ -155,10 +156,9 @@ static NSString *profileFirstSectionCellReuseIdentifier = @"Z3ProfileFirstSectio
     transition.subtype = kCATransitionFromRight;
     [window.layer addAnimation:transition forKey:@"transition"];
     window.rootViewController = rootViewController;
-     //TODO:苏州水利简易版
-    //[[AppDelegate sharedInstance] unbindTags];
-    
-   
+    [[Z3LocationManager manager] stop];
+        //TODO:苏州水利简易版
+        //[[AppDelegate sharedInstance] unbindTags];
 }
 
 #pragma mark --getter and setter
