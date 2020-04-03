@@ -149,7 +149,7 @@ static NSString *profileFirstSectionCellReuseIdentifier = @"Z3ProfileFirstSectio
     }];
     UIWindow *window = [[UIApplication sharedApplication].delegate window];
     UINavigationController *rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
-    loginVC.navigationItem.title = LocalizedString(@"app_display_name");
+    loginVC.navigationItem.title = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     CATransition *transition = [[CATransition alloc] init];
     transition.duration = 0.25;
     transition.type = kCATransitionPush;
