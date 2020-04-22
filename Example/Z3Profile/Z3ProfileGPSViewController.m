@@ -39,8 +39,7 @@
     double latitude = lastLocation.coordinate.latitude;
     double longitude = lastLocation.coordinate.longitude;
     double accuracy = lastLocation.horizontalAccuracy;
-    CoorTranUtil *coorTrans = [Z3MobileConfig shareConfig].coorTrans;
-    CGPoint point = [coorTrans CoorTrans:latitude lon:longitude height:0];
+    CGPoint point = [self transToLocalWithLat:latitude andWithLong:longitude];
     double lastX = point.x;
     double lastY = point.y;
     NSString *lastUpdateDateStr = @"";//[[NSUserDefaults standardUserDefaults] stringForKey:Z3CommonLastUploadLocationsDateKey];
@@ -111,5 +110,19 @@ static NSString *subTitleReuseIdentifier = @"GPS-SubTitleTableViewCell";
     }
 }
 
-
+/**
+ 根据经纬度转成本地坐标 如果转换参数为空 则不进行转换
+ */
+-(CGPoint)transToLocalWithLat:(double)lat andWithLong:(double)lon{
+    CoorTranUtil *coorTrans = [Z3MobileConfig shareConfig].coorTrans;
+    CGFloat latF = lat;
+    CGFloat lonF = lon;
+    CGPoint point;
+    if(nil == coorTrans){
+        point = CGPointMake(lonF, latF);
+    } else {
+        point = [coorTrans CoorTrans:lat lon:lon height:0];
+    }
+    return point;
+}
 @end
