@@ -104,24 +104,26 @@ static NSString *reuseIdentifier = @"UITableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-     Z3SettingItem *item = self.dataSource[indexPath.section][indexPath.row];
-//    if ([item.title isEqualToString:LocalizedString(@"clear cache")]) {
-//        YYImageCache *cache = [YYWebImageManager sharedManager].cache;
-////        // 清空缓存
-//        [cache.memoryCache removeAllObjects];
-//        // 清空磁盘缓存，带进度回调
-//        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//       hud.mode = MBProgressHUDModeDeterminate;
-//        [cache.diskCache removeAllObjectsWithProgressBlock:^(int removedCount, int totalCount) {
-//           float progress = removedCount / (float)totalCount;
-//           hud.progress = progress;
-//        } endBlock:^(BOOL error) {
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                [hud hideAnimated:YES];
-//                [MBProgressHUD showSuccess:LocalizedString(@"clear cache success")];
-//            });
-//        }];
-//    }
+    Z3SettingItem *item = self.dataSource[indexPath.section][indexPath.row];
+    if ([item.title isEqualToString:LocalizedString(@"clear cache")]) {
+        [self showAlert:@"提醒" message:@"将移除缓存文件" handler:^(UIAlertAction * _Nonnull action) {
+            YYImageCache *cache = [YYWebImageManager sharedManager].cache;
+            //        // 清空缓存
+            [cache.memoryCache removeAllObjects];
+            // 清空磁盘缓存，带进度回调
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            hud.mode = MBProgressHUDModeDeterminate;
+            [cache.diskCache removeAllObjectsWithProgressBlock:^(int removedCount, int totalCount) {
+                float progress = removedCount / (float)totalCount;
+                hud.progress = progress;
+            } endBlock:^(BOOL error) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [hud hideAnimated:YES];
+                    [MBProgressHUD showSuccess:LocalizedString(@"clear cache success")];
+                });
+            }];
+        }];
+    }
 }
 
 
